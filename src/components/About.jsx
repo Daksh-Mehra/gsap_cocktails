@@ -23,18 +23,18 @@ useGSAP(()=>{
         opacity:0,
         duration:1,
         ease:'power1.inOut',
-        stagger:0.05
+        stagger:0.04
 
     },'-0.05')
 })
 
   return (
     <div id='about'>
-        <div className='mb-16 md:px-0 px-5'>
+        <div className='mb-10 md:px-0 px-5'>
             <div className='content'>
                 <div className="md:col-span-8">
                     <p className='badge'>Best Cocktails</p>
-                    <h2>Where every details matters <span className='text-white'>- </span>
+                    <h2>Where every details matters <span className='text-white'> -</span>
                     from muddle to garnish
                     </h2>
                 </div>
@@ -78,12 +78,12 @@ useGSAP(()=>{
         <div className='bottom-grid'>
             <div className='md:col-span-8'>
                 <div className='noisy' />
-                    <img src="/images/abt3.png" alt="grid-img-3" />
+                    <img src="/images/abt3.png" className='object-top' alt="grid-img-3" />
                 
             </div>
             <div className='md:col-span-4'>
-                <div className='noisy' />
-                    <img src="/images/abt4.png" alt="grid-img-4" />
+                <div className='noisy ' />
+                    <img src="/images/abt4.png" alt="grid-img-4" className='object-top' />
                 
             </div>
         </div>

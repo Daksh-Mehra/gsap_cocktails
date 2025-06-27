@@ -17,7 +17,7 @@ const Hero = () => {
     useGSAP(()=>{
 
         const heroSplit=new SplitText('.title', {type:"chars,words"});
-        const paragraphplit=new SplitText('.subtitle', {type:"lines"});
+        const paragraphsplit=new SplitText('.subtitle', {type:"lines"});
 
         heroSplit.chars.forEach((char)=>char.classList.add("text-gradient"));
 
@@ -27,7 +27,7 @@ const Hero = () => {
             ease:'expo.out',
             stagger:0.06
         });
-        gsap.from(paragraphplit.lines,{
+        gsap.from(paragraphsplit.lines,{
             yPercent:100,
             duration:1.8,
             ease:'expo.out',
@@ -44,7 +44,7 @@ const Hero = () => {
         }}).to(".right-leaf",{y:200},0).to(".left-leaf",{y:-200}, 0);
 
         const startValue=isMobile?"top 50%":"center 60%";
-        const endValue=isMobile?"140% top":"bottom top";
+        const endValue=isMobile?"120% top":"bottom top";
 
         const tl=gsap.timeline({scrollTrigger:{
             trigger:"video",
