@@ -15,8 +15,8 @@ const Menu = () => {
         gsap.fromTo("#title",{opacity:0},{opacity:1,duration:1})
         gsap.fromTo(".cocktail img",{opacity:0,xPercent:-100},{opacity:1,xPercent:0,duration:1,ease:"power1.inOut"})
     },[currentindex])
-        gsap.fromTo(".details h2",{opacity:0,yPercent:100},{opacity:1,yPercent:0,duration:1,ease:"power1.inOut"})
-        gsap.fromTo(".details p",{opacity:0,yPercent:100},{opacity:1,yPercent:0,duration:1,ease:"power1.inOut",delay:0.2})
+        gsap.fromTo(".details h2",{opacity:0,yPercent:50},{opacity:1,yPercent:0,duration:1,ease:"power3.inOut"})
+        gsap.fromTo(".details p",{opacity:0,yPercent:50},{opacity:1,yPercent:0,duration:1,ease:"power3.inOut",})
 
     const gotoslide=(index)=>{
 
